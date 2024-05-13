@@ -1,0 +1,32 @@
+{
+    "name": "hogus/api-signature",
+    "description": "laravel api signature",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hogus\\ApiSignature\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hogus",
+            "email": "hogus2037@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "laravel/framework": ">=8.0",
+        "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hogus\\ApiSignature\\ApiSignatureServiceProvider"
+            ],
+            "aliases": {
+                "Signature": "Hogus\\ApiSignature\\Facades\\Signature"
+            }
+        }
+    }
+}
